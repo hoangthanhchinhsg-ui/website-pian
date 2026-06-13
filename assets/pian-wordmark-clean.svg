@@ -1,0 +1,20 @@
+<svg width="590" height="150" viewBox="0 0 590 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="softShadow" x="-10" y="-6" width="610" height="166" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="4" dy="5" stdDeviation="2.2" flood-color="#160020" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="orangeDot" x1="318" y1="96" x2="356" y2="136" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF9A33"/>
+      <stop offset="1" stop-color="#F47C20"/>
+    </linearGradient>
+  </defs>
+
+  <g fill="#FFFFFF" filter="url(#softShadow)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 18H96C132 18 156 38 156 67C156 96 132 112 96 112H50V145H18V18ZM50 45V86H92C110 86 124 79 124 67C124 55 110 45 92 45H50Z"/>
+    <path d="M198 18H230V145H198V18Z"/>
+    <path d="M318 18H352L421 145H386L335 55L285 145H250L318 18Z"/>
+    <path d="M454 18H487L552 107V18H584V145H552L487 56V145H454V18Z"/>
+  </g>
+
+  <circle cx="335" cy="113" r="18" fill="url(#orangeDot)" filter="url(#softShadow)"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg width="560" height="150" viewBox="0 0 560 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pianOrange" x1="226" y1="98" x2="268" y2="138" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF9A33"/>
+      <stop offset="1" stop-color="#F47C20"/>
+    </linearGradient>
+    <filter id="letterShadow" x="-12" y="-6" width="584" height="166" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="5" dy="7" stdDeviation="3.5" flood-color="#160020" flood-opacity="0.55"/>
+      <feDropShadow dx="-2" dy="-2" stdDeviation="1.2" flood-color="#F0D5FF" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#letterShadow)" fill="#FFFFFF">
+    <path d="M18 21H96C132 21 156 43 156 76C156 109 132 131 96 131H48V142H18V21ZM48 47V105H92C111 105 126 93 126 76C126 59 111 47 92 47H48Z"/>
+    <path d="M186 21H216V142H186V21Z"/>
+    <path d="M315 21H347L413 142H379L331 55L283 142H249L315 21Z"/>
+    <path d="M450 21H480L531 93V21H560V142H531L480 70V142H450V21Z"/>
+  </g>
+
+  <circle cx="331" cy="113" r="18" fill="url(#pianOrange)" filter="url(#letterShadow)"/>
+</svg>
