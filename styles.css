@@ -1988,7 +1988,7 @@ h1 {
   max-width: 100%;
   margin: 0 0 20px;
   color: #fff;
-  font-size: clamp(5.4rem, 11vw, 10.8rem);
+  font-size: clamp(4.3rem, 8.8vw, 8.6rem);
   font-weight: 900;
   line-height: 0.82;
   letter-spacing: 0;
