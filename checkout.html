@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thanh toán | PIAN</title>
+    <meta name="description" content="Hoàn tất thông tin đặt mua bàn ăn thông minh gấp gọn PIAN.">
+    <link rel="icon" href="assets/pian-logo-transparent.png">
+    <link rel="stylesheet" href="styles.css?v=20260611-11">
+    <link rel="stylesheet" href="header-sync.css?v=20260611-2">
+  </head>
+  <body class="checkout-body">
+    <header class="site-header" aria-label="Thanh điều hướng">
+      <a class="brand" href="index.html" aria-label="PIAN">
+        <img class="brand-logo" src="assets/pian-logo-transparent.png" alt="">
+        <img class="brand-wordmark" src="assets/pian-wordmark-clean.svg" alt="PIAN">
+      </a>
+    </header>
+
+    <nav class="market-menu" aria-label="Điều hướng chính">
+      <div class="menu-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="products.html">Sản phẩm</a>
+        <a href="news.html">Tin tức</a>
+      </div>
+      <div class="menu-category">
+        <button type="button" aria-expanded="false"><span class="category-icon"></span>Danh mục sản phẩm</button>
+        <div class="menu-category-list">
+          <a href="products.html"><img src="assets/pian-folding-dining-table.png" alt=""><span>Tất Cả Sản Phẩm</span></a>
+          <a href="pa150.html"><img src="assets/bep-sang-trong-IMG_5947.png" alt=""><span>Bàn Ăn Gấp Gọn 150CM</span></a>
+          <a href="product-pian-120.html"><img src="assets/pian-folding-dining-table.png" alt=""><span>Bàn Ăn Gấp Gọn 120CM</span></a>
+        </div>
+      </div>
+      <div class="menu-contact">
+        <a class="menu-hotline" href="tel:0913011863">Hotline: 0913 011 863</a>
+        <a class="menu-consult" href="index.html#order">Tư vấn mua hàng</a>
+      </div>
+    </nav>
+
+    <main class="checkout-page">
+      <nav class="checkout-breadcrumb" aria-label="Đường dẫn trang">
+        <a href="index.html">Trang chủ</a>
+        <span>&gt;</span>
+        <a href="products.html">Sản phẩm</a>
+        <span>&gt;</span>
+        <a id="checkout-breadcrumb-series" href="pa150.html">Bàn ăn gấp gọn 150cm</a>
+        <span>&gt;</span>
+        <a id="checkout-breadcrumb-product" href="pa150-product.html?variant=black-4">Bàn ăn gấp gọn 150cm</a>
+        <span>&gt;</span>
+        <strong>Đặt hàng</strong>
+      </nav>
+      <form class="checkout-layout" id="checkout-form">
+        <section class="checkout-cart" aria-labelledby="checkout-cart-title">
+          <h1 id="checkout-cart-title">GIỎ HÀNG</h1>
+          <div class="checkout-product">
+            <img id="checkout-image" src="assets/bep-sang-trong-IMG_5947.png" alt="">
+            <div class="checkout-product-info">
+              <h2 id="checkout-name">Bàn ăn gấp gọn PIAN</h2>
+              <div class="checkout-product-row">
+                <div>
+                  <span>Số lượng:</span>
+                  <div class="checkout-stepper">
+                    <button type="button" data-checkout-quantity="decrease">−</button>
+                    <input id="checkout-quantity" type="text" inputmode="numeric" value="1" readonly aria-label="Số lượng">
+                    <button type="button" data-checkout-quantity="increase">+</button>
+                  </div>
+                </div>
+                <p>Tổng tiền: <strong id="checkout-line-total">0 VNĐ</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout-costs">
+            <p><span>Phí vận chuyển:</span><strong>0 VNĐ</strong></p>
+            <p><span>Mã giảm giá:</span><strong id="checkout-discount">0 VNĐ</strong></p>
+            <p><span>Giảm giá đơn hàng:</span><strong>0 VNĐ</strong></p>
+          </div>
+          <div class="checkout-grand-total"><span>TỔNG TIỀN:</span><strong id="checkout-total">0 VNĐ</strong></div>
+
+          <div class="coupon-box">
+            <strong>Mã giảm giá</strong>
+            <div><input id="coupon-code" type="text" placeholder="Nhập mã khuyến mãi để nhận ưu đãi"><button id="apply-coupon" type="button">Áp dụng</button></div>
+            <p id="coupon-message" aria-live="polite"></p>
+          </div>
+        </section>
+
+        <section class="checkout-customer" aria-labelledby="checkout-customer-title">
+          <h2 id="checkout-customer-title">THÔNG TIN KHÁCH HÀNG</h2>
+          <fieldset class="checkout-salutation" aria-label="Chọn cách xưng hô">
+            <label><input type="radio" name="title" value="Anh" required><span class="checkout-title-text">Anh</span></label>
+            <label><input type="radio" name="title" value="Chị" required><span class="checkout-title-text">Chị</span></label>
+          </fieldset>
+          <div class="checkout-two-columns">
+            <label><span>Họ và tên</span><input type="text" name="name" placeholder="Họ và tên của khách hàng..." required></label>
+            <label><span>Số điện thoại</span><input type="tel" name="phone" placeholder="Số điện thoại của khách hàng..." required></label>
+          </div>
+          <label><span>Yêu cầu khác</span><textarea name="note" rows="3" placeholder="Yêu cầu khác (Không bắt buộc)..."></textarea></label>
+
+          <section class="consult-product-panel" aria-labelledby="consult-product-title">
+            <h2 id="consult-product-title">THÔNG TIN SẢN PHẨM</h2>
+            <div class="consult-product-controls">
+              <label>
+                <span>Sản phẩm</span>
+                <select id="consult-product-select" name="consult-product"></select>
+              </label>
+              <div class="consult-quantity-control">
+                <span>Số lượng</span>
+                <div class="checkout-stepper">
+                  <button type="button" data-consult-quantity="decrease">−</button>
+                  <input id="consult-quantity" type="text" inputmode="numeric" value="1" readonly aria-label="Số lượng sản phẩm">
+                  <button type="button" data-consult-quantity="increase">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="consult-product-total">
+              <span>Tổng tiền:</span>
+              <strong id="consult-total">0 VNĐ</strong>
+            </div>
+          </section>
+
+          <h2 class="delivery-title">ĐỊA CHỈ GIAO HÀNG</h2>
+          <div class="checkout-two-columns">
+            <label><span>Tỉnh/Thành phố</span>
+              <select id="checkout-province" name="province" required>
+                <option value="">Đang tải Tỉnh/Thành phố...</option>
+              </select>
+            </label>
+            <label><span>Quận/Huyện</span>
+              <select id="checkout-district" name="district" required>
+                <option value="">Chọn Tỉnh/Thành phố trước</option>
+              </select>
+            </label>
+          </div>
+          <label><span>Địa chỉ chi tiết</span><input type="text" name="address" placeholder="Số nhà, tên đường..." required></label>
+
+          <button class="checkout-submit" type="submit">ĐẶT HÀNG NGAY</button>
+          <p class="checkout-success" aria-live="polite"></p>
+        </section>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div><img class="footer-logo" src="assets/pian-logo-transparent.png" alt=""><strong>PIAN</strong><p>Bàn ăn gấp gọn thông minh cho không gian sống linh hoạt.</p></div>
+      <div><strong>Hỗ trợ khách hàng</strong><a href="policy.html">Chính sách bảo hành</a><a href="policy.html">Chính sách vận chuyển</a></div>
+      <div><strong>Liên hệ</strong><a href="tel:0913011863">Hotline: 0913 011 863</a><span>Email: hello@pian.vn</span></div>
+    </footer>
+
+    <script src="script.js?v=20260611-4"></script>
+    <script src="checkout.js?v=20260611-2"></script>
+  </body>
+</html>

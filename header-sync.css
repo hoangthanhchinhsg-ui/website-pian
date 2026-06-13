@@ -1,0 +1,205 @@
+/* Shared PIAN header. Loaded after page styles so every page stays identical. */
+@media (min-width: 901px) {
+  body .site-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    height: 151px !important;
+    min-height: 151px !important;
+    margin: 0 !important;
+    padding: 12px clamp(18px, 4vw, 56px) !important;
+    background: #45085f !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+  }
+
+  body .site-header .brand {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 16px !important;
+    width: auto !important;
+    height: 126px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  body .site-header .brand-logo {
+    width: 126px !important;
+    min-width: 126px !important;
+    height: 126px !important;
+    object-fit: contain !important;
+    flex: 0 0 126px !important;
+  }
+
+  body .site-header .brand-wordmark {
+    width: clamp(168px, 19vw, 240px) !important;
+    max-width: 240px !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  body .market-menu {
+    position: sticky !important;
+    top: 151px !important;
+    z-index: 999 !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: clamp(18px, 3vw, 44px) !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    height: 70px !important;
+    min-height: 70px !important;
+    margin: 0 !important;
+    padding: 10px clamp(18px, 5vw, 72px) !important;
+    overflow: visible !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    background: #65168a !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
+    box-shadow: 0 14px 36px rgba(47, 5, 74, 0.18) !important;
+    backdrop-filter: none !important;
+  }
+
+  body .market-menu .menu-links,
+  body .market-menu .menu-contact {
+    display: flex !important;
+    align-items: center !important;
+    gap: clamp(18px, 3vw, 42px) !important;
+  }
+
+  body .market-menu .menu-links {
+    justify-content: flex-start !important;
+  }
+
+  body .market-menu .menu-contact {
+    justify-content: flex-end !important;
+  }
+
+  body .market-menu a,
+  body .market-menu .menu-category button {
+    font-family: "Segoe UI", Arial, sans-serif !important;
+    font-size: 0.94rem !important;
+    font-weight: 800 !important;
+  }
+
+  body .market-menu .menu-category {
+    position: relative !important;
+    justify-self: center !important;
+  }
+
+  body .market-menu .menu-category button {
+    width: 290px !important;
+    min-width: 290px !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    padding: 0 16px !important;
+    border-radius: 6px !important;
+  }
+
+  /*
+   * Product-detail pages are rendered about 10% smaller by their legacy
+   * layout. Compensate only the shared header so it matches every other page.
+   */
+  body.product-detail-body .site-header {
+    height: 168px !important;
+    min-height: 168px !important;
+    padding: 13px clamp(20px, 4.45vw, 62px) !important;
+  }
+
+  body.product-detail-body .site-header .brand {
+    height: 140px !important;
+    gap: 18px !important;
+  }
+
+  body.product-detail-body .site-header .brand-logo {
+    width: 140px !important;
+    min-width: 140px !important;
+    height: 140px !important;
+    flex-basis: 140px !important;
+  }
+
+  body.product-detail-body .site-header .brand-wordmark {
+    width: clamp(187px, 21.1vw, 267px) !important;
+    max-width: 267px !important;
+  }
+
+  body.product-detail-body .market-menu {
+    top: 168px !important;
+    height: 78px !important;
+    min-height: 78px !important;
+    gap: clamp(20px, 3.34vw, 49px) !important;
+    padding: 11px clamp(20px, 5.56vw, 80px) !important;
+  }
+
+  body.product-detail-body .market-menu .menu-links,
+  body.product-detail-body .market-menu .menu-contact {
+    gap: clamp(20px, 3.34vw, 47px) !important;
+  }
+
+  body.product-detail-body .market-menu a,
+  body.product-detail-body .market-menu .menu-category button {
+    font-size: 1.045rem !important;
+  }
+
+  body.product-detail-body .market-menu .menu-category button {
+    width: 322px !important;
+    min-width: 322px !important;
+    height: 53px !important;
+    min-height: 53px !important;
+    gap: 11px !important;
+    padding: 0 18px !important;
+    border-radius: 7px !important;
+  }
+
+  body.product-detail-body .market-menu .category-icon {
+    width: 24px !important;
+    height: 18px !important;
+    background:
+      linear-gradient(#6b6470, #6b6470) 0 0 / 24px 2px no-repeat,
+      linear-gradient(#6b6470, #6b6470) 0 8px / 24px 2px no-repeat,
+      linear-gradient(#6b6470, #6b6470) 0 16px / 24px 2px no-repeat !important;
+  }
+
+  body.product-detail-body .market-menu .menu-hotline::before {
+    width: 9px !important;
+    height: 9px !important;
+    margin-right: 9px !important;
+  }
+
+  body.product-detail-body .market-menu .menu-category-list {
+    width: 322px !important;
+  }
+
+  body.product-detail-body .market-menu .menu-category-list a {
+    min-height: 78px !important;
+    grid-template-columns: 53px 1fr !important;
+    gap: 16px !important;
+    padding: 11px 18px !important;
+    font-size: 1rem !important;
+  }
+
+  body.product-detail-body .market-menu .menu-category-list img {
+    width: 53px !important;
+    height: 49px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  body .site-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+  }
+
+  body .market-menu {
+    position: sticky !important;
+    z-index: 999 !important;
+  }
+}
