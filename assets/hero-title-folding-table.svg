@@ -1,0 +1,48 @@
+<svg width="1536" height="864" viewBox="0 0 1536 864" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1536" y2="864" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6A18E8"/>
+      <stop offset="0.38" stop-color="#9B2BEA"/>
+      <stop offset="0.68" stop-color="#D34CA7"/>
+      <stop offset="1" stop-color="#FF8A22"/>
+    </linearGradient>
+    <linearGradient id="bigText" x1="0" y1="340" x2="0" y2="720" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.38" stop-color="#FFE9FF"/>
+      <stop offset="0.72" stop-color="#FFBE81"/>
+      <stop offset="1" stop-color="#F47C20"/>
+    </linearGradient>
+    <filter id="scriptGlow" x="-40%" y="-80%" width="180%" height="260%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#FFFFFF" flood-opacity="0.72"/>
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#8A1EE6" flood-opacity="0.70"/>
+      <feDropShadow dx="0" dy="14" stdDeviation="10" flood-color="#2A003D" flood-opacity="0.42"/>
+    </filter>
+    <filter id="bigGlow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#FFFFFF" flood-opacity="0.58"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="2" flood-color="#FF8A22" flood-opacity="0.48"/>
+      <feDropShadow dx="0" dy="20" stdDeviation="16" flood-color="#3C0057" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+
+  <rect width="1536" height="864" fill="url(#bg)"/>
+  <rect width="1536" height="864" fill="url(#bg)" opacity="0.55"/>
+  <circle cx="282" cy="150" r="360" fill="#8A1EE6" opacity="0.38"/>
+  <circle cx="1288" cy="732" r="420" fill="#FF9A33" opacity="0.40"/>
+
+  <text x="72" y="360"
+        fill="#FFFFFF"
+        font-family="Segoe Script, Segoe Print, Segoe UI, cursive"
+        font-size="124"
+        font-weight="700"
+        filter="url(#scriptGlow)">Bàn Ăn Thông Minh</text>
+
+  <text x="210" y="650"
+        fill="url(#bigText)"
+        stroke="#FFFFFF"
+        stroke-width="2.8"
+        font-family="Segoe UI, Arial, sans-serif"
+        font-size="238"
+        font-weight="900"
+        font-style="italic"
+        filter="url(#bigGlow)">Gấp Gọn</text>
+</svg>
